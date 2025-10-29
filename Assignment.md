@@ -28,7 +28,6 @@ Optimize a 2D convolution kernel through a series of progressive improvements, a
 - Increase effective global-memory bandwidth by maximizing bytes used per transaction and minimizing transactions per warp.
 
 **What to Measure (before & after):**
-- L1TEX/L2: average bytes used per sector (aim ~32/32 for 32B sectors)
 - Global load efficiency / requested vs. delivered bytes
 - DRAM read throughput (GB/s) and "transactions per request" counters
 - Kernel time and MPix/s
@@ -100,7 +99,6 @@ Your report should include the following for each variant:
 ### 1. Implementation Strategy
 - Description of your approach
 - Key design decisions and tradeoffs
-- Any challenges encountered
 
 ### 2. Performance Analysis
 - Profiling data from Nsight Compute/Systems
