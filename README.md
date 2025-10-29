@@ -30,7 +30,7 @@ ncu --set full -o variant1.ncu-rep \
 ```
 hpca-assignment-2025/
 ├── src/
-│   ├── conv_kernels.cu         # ⭐ YOUR IMPLEMENTATION HERE
+│   ├── conv_kernels.cu         # YOUR IMPLEMENTATION HERE
 │   ├── main.cu                 # Benchmark driver (provided)
 │   ├── cpu_reference.cpp       # CPU reference (provided)
 │   └── utils.cu                # Utilities (provided)
@@ -129,7 +129,7 @@ ncu --metrics l1tex__data_bank_conflicts_pipe_lsu_mem_shared.sum \
 
 **Expected output:**
 ```
-✓ PASS: Results match CPU reference
+PASS: Results match CPU reference
 Maximum absolute difference vs CPU: 0.00000024
 ```
 
@@ -224,10 +224,9 @@ make clean && make
 
 - [ ] All variants compile: `make clean && make`
 - [ ] All variants pass verification: `--verify`
-- [ ] Performance targets met (see table above)
+- [ ] Progressively optimise each variant 
 - [ ] Code is well-commented
 - [ ] Report includes profiling analysis
-- [ ] NCU reports included (`.ncu-rep` files)
 
 ---
 
