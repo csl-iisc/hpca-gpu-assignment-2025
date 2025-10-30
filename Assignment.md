@@ -132,7 +132,16 @@ Your report should include the following for each variant:
 ---
 
 ## Submission Deadline
-Details on how and when to upload the assignment will be shared soon.
+**21st November, 11:59 PM (IST)**
+
+### GPU Access
+- Each student will receive credentials for either the **Amazon** or **Wells Fargo** server to run experiments.  
+- Please start early — GPU contention near the deadline is expected.  
+- **Extensions will not be granted** for lack of GPU time.
+
+### Submission Platform
+- Submit on **Microsoft Teams**  
+- **Folder name:** `<last_5_digits_of_SR_ID>`
 
 ## Academic Integrity
 All code must be your own work. Plagiarism will result in consequences per institute policy.
