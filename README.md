@@ -209,6 +209,16 @@ export PATH=/usr/local/cuda/bin:$PATH
 make clean && make
 ```
 
+**tmp lock file issue**
+```bash
+# Create tmp folder and point to tmp directory
+mkdir -p ~/ncu_tmp
+export TMPDIR=~/ncu_tmp
+
+# Rebuild from scratch
+make clean && make
+```
+
 **Wrong results:**
 - Test with smaller inputs
 - Check boundary handling
