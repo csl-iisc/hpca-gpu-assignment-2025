@@ -218,9 +218,9 @@ void conv2d_variant4(const float* input, const float* kernel, float* output,
 // =============================================================================
 
 
-void conv2d_bonus(const float* input, const float* kernel, float* output,
-                  int batch_size, int height, int width, int kernel_size,
-                  int chunk_size, int num_streams) {
+void conv2d_bonus(const float* input, const float* kernel1, const float* kernel2,
+                  float* output, int batch_size, int height, int width,
+                  int kernel_size, cudaStream_t stream) {
     // TODO: Implement multi-stream version
     // You can reuse any of your previous kernels
 
