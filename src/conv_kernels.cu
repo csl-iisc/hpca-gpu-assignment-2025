@@ -202,6 +202,8 @@ void conv2d_variant3(const float* input, const float* kernel, float* output,
 // - Degree of overlap visible on the NSYS timeline (copies concurrent with kernels).
 // - Any change in kernel performance (avoid starving compute with too many small chunks).
 //
+// NOTE: const float* input, const float* kernel are host pointers in this task
+//
 // =============================================================================
 
 

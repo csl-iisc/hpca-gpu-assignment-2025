@@ -157,7 +157,7 @@ int main(int argc, char** argv) {
             conv2d_variant3(device_input, device_kernel, device_output, 
                             batch_size, height, width, kernel_size, stream);
         } else if (impl_name == "variant4") {
-            conv2d_variant4(device_input, device_kernel, device_output, 
+            conv2d_variant4(host_images.data(), host_kernel.data(), device_output, 
                             batch_size, height, width, kernel_size, stream);
         } else {
             std::fprintf(stderr, "Unknown implementation: %s\n", impl_name.c_str());
